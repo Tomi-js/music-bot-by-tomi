@@ -20,7 +20,7 @@ module.exports = {
 
         message.channel.send({
             embed: {
-                color: 'ORANGE',
+                color: 'none',
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 fields: [
                     { name: 'Filtry', value: filtersStatuses[0].join('\n'), inline: true },
