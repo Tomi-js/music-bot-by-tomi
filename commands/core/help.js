@@ -16,8 +16,8 @@ module.exports = {
                     footer: { text: 'Bot stworzony przez Tomi#9209' },
                     fields: [
                         { name: 'Bot', value: infos },
-                        { name: 'Music', value: music },
-                        { name: 'Filters', value: client.filters.map((x) => '`' + x + '`').join(', ') },
+                        { name: 'Muzyka', value: music },
+                        { name: 'Filtry', value: client.filters.map((x) => '`' + x + '`').join(', ') },
                     ],
                     timestamp: new Date(),
                     description: `Używanie filtrów, Przykład: ${client.config.discord.prefix}filter bassboost. Aby wyłączyć filtr należy wpisać go jeszcze raz.`,
