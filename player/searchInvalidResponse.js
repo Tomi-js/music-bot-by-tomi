@@ -3,7 +3,7 @@ module.exports = (client, message, query, tracks, content, collector) => {
         collector.stop();
         return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Wybór został anulowany! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -11,7 +11,7 @@ module.exports = (client, message, query, tracks, content, collector) => {
         });
     } else message.channel.send({
         embed: {
-            color: 'none',
+            color: '#273A7A',
             description: (`Musisz wysłać prawidłowy numer od 1 do ${tracks.length}! [<@${message.member.user.id}>]`),
             footer: { text: 'Bot stworzony przez Tomi#9209' },
             timestamp: new Date(),

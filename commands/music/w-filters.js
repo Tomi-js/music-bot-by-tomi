@@ -7,7 +7,7 @@ module.exports = {
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Musisz być na kanale głosowym! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -16,7 +16,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Nie jesteś na tym samym kanale co ja! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -25,7 +25,7 @@ module.exports = {
 
         if (!client.player.getQueue(message)) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Nic teraz nie leci! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -41,7 +41,7 @@ module.exports = {
 
         message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 fields: [
                     { name: 'Filtry', value: filtersStatuses[0].join('\n'), inline: true },

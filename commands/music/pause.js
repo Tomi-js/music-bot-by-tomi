@@ -25,7 +25,7 @@ module.exports = {
 
         if (!client.player.getQueue(message)) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Nic teraz nie leci! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -34,7 +34,7 @@ module.exports = {
 
         if (client.player.getQueue(message).paused) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Muzyka została wstrzymana wcześniej! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -45,7 +45,7 @@ module.exports = {
 
         if (success) message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Piosenka została wstrzymana! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),

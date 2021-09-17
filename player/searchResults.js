@@ -1,7 +1,7 @@
 module.exports = (client, message, query, tracks) => {
     message.channel.send({
         embed: {
-            color: 'none',
+            color: '#273A7A',
             author: { name: `Wyniki wyszukiwania dla ${query} [<@${message.member.user.id}>]` },
             footer: { text: 'Bot stworzony przez Tomi#9209' },
             timestamp: new Date(),
