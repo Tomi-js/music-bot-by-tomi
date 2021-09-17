@@ -1,21 +1,63 @@
 module.exports = (client, error, message, ...args) => {
     switch (error) {
         case 'NotPlaying':
-            message.channel.send(`${client.emotes.error} - Na tym serwerze nie jest odtwarzana żadna muzyka!`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Na tym serwerze nie jest odtwarzana żadna muzyka! [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
             break;
         case 'NotConnected':
-            message.channel.send(`${client.emotes.error} - Musisz być na kanale głosowym!`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Musisz być na kanale głosowym! [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
             break;
         case 'UnableToJoin':
-            message.channel.send(`${client.emotes.error} - Nie mogę dołączyć do Twojego kanału głosowego, sprawdź moje uprawnienia!`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Nie mogę dołączyć do Twojego kanału głosowego, sprawdź moje uprawnienia! [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
             break;
         case 'VideoUnavailable':
-            message.channel.send(`${client.emotes.error} - ${args[0].title} nie jest dostępna w Twoim kraju! Skipowanie...`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Ta piosenka nie jest dostępna w Twoim kraju! Pomijanie... [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
             break;
         case 'MusicStarting':
-            message.channel.send(`Rozpoczyna się muzyka... poczekaj i spróbuj ponownie!`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Muzyka się włącza... poczekaj i gdy się nie włączy spróbuj ponownie! [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
             break;
         default:
-            message.channel.send(`${client.emotes.error} - Coś poszło nie tak... Błąd : ${error}`);
+            message.channel.send({
+                embed: {
+                    color: 'none',
+                    description: (`Coś poszło nie tak... Błąd: ${error} [<@${message.member.user.id}>]`),
+                    footer: { text: 'Bot stworzony przez Tomi#9209' },
+                    timestamp: new Date(),
+                },
+            });
     };
 };
