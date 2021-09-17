@@ -35,7 +35,7 @@ module.exports = {
         });
 
         message.channel.send('```' + `Kolejka - ${client.player.getQueue(message).loopMode ? 'zloopowana' : ''}\nAktualnie leci: ${queue.playing.title} | ${queue.playing.author}\n\n` + (queue.tracks.map((track, i) => {
-            return `#${i + 1} - ${track.title} | ${track.author} [<@${message.member.user.id}>]`
+            return `#${i + 1} - ${track.title} | ${track.author}`
         }).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `I ${queue.tracks.length - 5} pozostałe piosenki` : `W playliście zostało ${queue.tracks.length} piosenek`}`) + '```');
     },
 };
