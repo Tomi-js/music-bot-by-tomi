@@ -3,7 +3,7 @@ module.exports = (client, message, track) => {
         embed: {
             color: 'none',
             title: { text: 'Aktualnie leci' },
-            description: (`[${track.title}](${track.uri})`),
+            description: (`[${track.title}](${track.url})`),
             footer: { text: 'Bot stworzony przez Tomi#9209' },
             timestamp: new Date(),
         },
