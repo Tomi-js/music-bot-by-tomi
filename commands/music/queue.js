@@ -14,7 +14,7 @@ module.exports = {
         if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Nic teraz nie leci!`);
 
         message.channel.send(`Kolejka - ${message.guild.name} ${client.emotes.queue} ${client.player.getQueue(message).loopMode ? 'Zloopowana' : ''}\nAktualnie : ${queue.playing.title} | ${queue.playing.author}\n\n` + (queue.tracks.map((track, i) => {
-            return `#${i + 1} - ${track.title} | ${track.author} (Na żądanie : ${track.requestedBy.username})`
-        }).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `And ${queue.tracks.length - 5} other songs...` : `W playliście zostało ${queue.tracks.length} piosenek`}`));
+            return `#${i + 1} - ${track.title} | ${track.author} [Na żądanie : ${track.requester}]`
+        }).slice(0, 5).join('\n') + `\n\n${queue.tracks.length > 5 ? `I ${queue.tracks.length - 5} pozostałe piosenki` : `W playliście zostało ${queue.tracks.length} piosenek`}`));
     },
 };
