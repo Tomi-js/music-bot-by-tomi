@@ -25,7 +25,7 @@ module.exports = {
 
         if (!client.player.getQueue(message)) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Nic teraz nie leci! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -34,7 +34,7 @@ module.exports = {
 
         if (!args[0]) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Wpisz poprawny filtr! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -45,7 +45,7 @@ module.exports = {
 
         if (!filterToUpdate) return message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Nie ma takiego filtra! Wypróbuj te: (8D, vibrato, pulsator...)! [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -60,7 +60,7 @@ module.exports = {
 
         if (filtersUpdated[filterToUpdate]) message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Dodaję filtr do muzyki, proszę czekać... Uwaga: im dłuższa muzyka, tym dłużej to potrwa. [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
@@ -68,7 +68,7 @@ module.exports = {
         });
         else message.channel.send({
             embed: {
-                color: 'none',
+                color: '#273A7A',
                 description: (`Wyłączam filtr muzyki, proszę czekać... Uwaga: im dłużej muzyka jest odtwarzana, tym dłużej to potrwa. [<@${message.member.user.id}>]`),
                 footer: { text: 'Bot stworzony przez Tomi#9209' },
                 timestamp: new Date(),
