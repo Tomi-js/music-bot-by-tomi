@@ -54,7 +54,7 @@ module.exports = (client, error, message, ...args) => {
             message.channel.send({
                 embed: {
                     color: 'none',
-                    description: (`Coś poszło nie tak...Xddnznz Błąd: ${error} [<@${message.member.user.id}>]`),
+                    description: (`Coś poszło nie tak... Błąd: ${error} [<@${message.member.user.id}>]`),
                     footer: { text: 'Bot stworzony przez Tomi#9209' },
                     timestamp: new Date(),
                 },
