@@ -11,7 +11,7 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'none',
+                    color: '#273A7A',
                     author: { name: 'Pomoc' },
                     footer: { text: 'Bot stworzony przez Tomi#9209' },
                     fields: [
@@ -30,7 +30,7 @@ module.exports = {
 
             message.channel.send({
                 embed: {
-                    color: 'none',
+                    color: '#273A7A',
                     author: { name: 'Pomoc' },
                     footer: { text: 'Bot stworzony przez Tomi#9209' },
                     fields: [
