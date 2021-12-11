@@ -1,0 +1,11 @@
+client.on('guildmemberAdd', guildMember =>{
+	const channel = guildMember.guild.channels.cache.get('640192791586275332');
+
+	const embed = new Discord.MessageEmbed()
+	.setColor('#038cfc')
+	.setTitle("Nowy użytkownik na serwerze")
+	.setDescription(`Witaj w Hestii <@${guildMember.user.id}>!\n`
+	+ `Jest nas już **${client.guilds.cache.get('605352860523167744').memberCount}**`);
+
+	message.channel.send(embed);
+})

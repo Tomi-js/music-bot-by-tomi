@@ -1,0 +1,9 @@
+Używasz złej komendy!
+Musisz być na kanale głosowym!
+Potrzebuję permisji aby dołączyć na kanał!
+`${song.title} został dodany do kolejki!`
+Musisz być na kanale głosowym aby pominąć piosenkę!
+Nie ma piosenki, którą mógłbym pominąć!
+Musisz być na kanale głosowym aby zatrzymać piosenkę!
+Nie ma piosenki, którą mógłbym zatrzymać!
+`Aktualnie leci: **${song.title}**`
