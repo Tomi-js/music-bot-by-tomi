@@ -3,8 +3,8 @@
   "main": "index.js",
   "author": "Tomi",
   "version": "5.0.0",
-  "repository": "https://github.com/ZerioDev/Music-bot.git",
-  "description": "A complete code to download for a music bot. Using a module (discord-player).",
+  "repository": "https://github.com/Tomi-js/music-bot-by-tomi.git",
+  "description": " ",
   "scripts": {
     "start": "node index.js"
   },
